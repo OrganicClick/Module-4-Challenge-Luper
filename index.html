@@ -49,6 +49,19 @@ interaction with the page-->
             <button id="try-again-button" class="btn btn-primary"> TRY AGAIN </button>
     </div>
 
+    <!-- Creates a div to be hidden until user answers all questions and timer hasn't reached 0 seconds. Creates an
+    input field for user to input their intitials. Clicking the "Submit" button pairs the timer-value and the user
+    initials and sends them to the High Scores div list-->
+    <div id="well-done-container">
+        <h2> Well Done!</h2>
+            <p> Your score is: <span id="timer-value"></span></p>
+            <p> Enter initials: 
+                <input type="text">
+                <input class="btn btn-primary" type="submit" value="Submit">
+             </p>
+    </div>
+
+    
 <!-- Scripting/sources to run jquery and Bootstrap API's, as well as local script.js file-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script
