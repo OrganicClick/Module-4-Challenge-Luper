@@ -27,9 +27,15 @@ interaction with the page-->
         <p>Timer: <span id=timer-value></span></p>
     </header>
 
-    <div
+    <!-- Creates landing page for the Coding Quiz, including a "START" button that displays the quiz container
+     and starts the timer countdown when the user clicks it-->
+     <div id="landing-page">
+        <h1> Coding Quiz</h1>
+            <p> Welcome to the Coding Quiz! Test your coding knowledge with a series of questions. You have 90 seconds to complete the quiz.</p>
+            <button id="start-button" class="btn btn-primary">START</button>
+     </div>
 
-    <!-- Creates a separate container for a given question/multiple choice answer pairing to be displayed 
+    <!--  Creates a separate container for a given question-multiple choice answer pairing to be displayed 
         dynamically -->
     <div id="quiz-container">
         <div id="question-and-answer-container"></div>
