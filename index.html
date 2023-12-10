@@ -17,10 +17,16 @@
  
 <body>
     <!-- Creates placeholder for future high scores page link and a countdown timer in the header element -->
-    <header id="Header">
+    <header id="header">
         <p> High Scores</p>
-        <p id="Timer">Timer:</p>
+        <p id="timer">Timer:</p>
     </header>
+
+    <!-- Creates a separate container for a given question/multiple choice answer pairing to be displayed 
+        dynamically -->
+    <div id="quiz-container">
+        <div id="question-and-answer-container"></div>
+    </div>
 
 <!-- Scripting/sources to run jquery and Bootstrap API's, as well as local script.js file-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
