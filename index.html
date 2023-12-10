@@ -51,7 +51,9 @@ interaction with the page-->
 
     <!-- Creates a div to be hidden until user answers all questions and timer hasn't reached 0 seconds. Creates an
     input field for user to input their intitials. Clicking the "Submit" button pairs the timer-value and the user
-    initials and sends them to the High Scores div list-->
+    initials and sends them to the High Scores div list. Reaching this page should also stop the timer value and
+    sends that value to the appropriate area of the code below. The "Submit" button should also send user back to
+    "landing-page".-->
     <div id="well-done-container">
         <h2> Well Done!</h2>
             <p> Your score is: <span id="timer-value"></span></p>
@@ -61,7 +63,7 @@ interaction with the page-->
              </p>
     </div>
 
-    
+
 <!-- Scripting/sources to run jquery and Bootstrap API's, as well as local script.js file-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script
