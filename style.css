@@ -6,3 +6,53 @@ header {
     padding: 10px;
     background-color: #f0f0f0;
   }
+
+/* Defines styling for landing-page container and its children */
+#landing-page {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Defines styling for quiz-container and its children */
+#quiz-container {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Defines styling for time-up-container and its children */
+#time-up-container {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Defines styling for well-done-container and its children */
+#well-done-container {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Defines styling for high-scores-container and its children */
+#high-scores-container {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
