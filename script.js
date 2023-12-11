@@ -15,7 +15,7 @@ const quizQuestions = [
             'JavaScript is an Object-Oriented language',
             'JavaScript is a High-level language'],
         correctAnswer: 'JavaScript is an Object-Based language'
-    }
+    },
     {
         question: 'Among the given statements, which statement defines closures in JavaScript?',
         options: [ 'JavaScript is a function that is enclosed with references to its inner function scope',
@@ -23,7 +23,7 @@ const quizQuestions = [
         'JavaScript is a function that is enclosed with the object to its inner function scope',
         'None of the mentioned'],
         correctAnswer: 'JavaScript is a function that is enclosed with references to its lexical environment'
-    }
+    },
     {
         question: 'Arrays in JavaScript are defined by which of the following statements?',
         options: ['It is an ordered list of values',
@@ -31,7 +31,7 @@ const quizQuestions = [
         'It is an ordered list of string',
         'It is an ordered list of functions'],
         correctAnswer: 'It is an ordered list of values'
-    }
+    },
     {
         question: 'Which of the following is not javascript data types?',
         options: ['Null type',
