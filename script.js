@@ -74,6 +74,11 @@ function displayQuestion(index) {
 //Function displays the Well Done page (PLACEHOLDER)
 function showWellDonePage();
 
+//Function displays the Times Up page (PLACEHOLDER)
+function showTimeUpPage();
+
+//Function displays the High Score page (PLACEHOLDER)
+function showHighScorePage();
 
 
 // Creates a function that displays the landing page by default and hides all other div's by default
