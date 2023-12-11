@@ -94,7 +94,7 @@ function displayQuestion(index) {
   console.log(`Question ${index + 1}: ${question.question}`);
 
   // Iterate through options and create buttons
-  question.options.forEach(option, optionIndex) ; {
+  question.options.forEach((option, optionIndex) ; {
     const button = document.createElement('button');
     button.textContent = option;
     button.addEventListener('click', () => {
@@ -109,17 +109,25 @@ function displayQuestion(index) {
         showWellDonePage();
       }
     });
-    }
+    })
 }
 
 //-------------------------------------
 
+// --- TIME UP CONTAINER FUNCTIONALITY --- 
+//-------------------------------------
+
+//Function displays the Times Up page (PLACEHOLDER)
+function showTimeUpPage();
+
+
+
+//-------------------------------------
 
 //Function displays the Well Done page (PLACEHOLDER)
 function showWellDonePage();
 
-//Function displays the Times Up page (PLACEHOLDER)
-function showTimeUpPage();
+
 
 //Function displays the High Score page (PLACEHOLDER)
 function showHighScorePage();
