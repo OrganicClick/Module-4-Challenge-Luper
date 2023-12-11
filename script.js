@@ -1,3 +1,6 @@
+// --- QUIZ QUESTION ARRAY --- 
+//-------------------------------------
+
 // Creates an array of quiz questions
 const quizQuestions = [
     {
@@ -43,6 +46,44 @@ const quizQuestions = [
 
 ]
 
+// --- LANDING PAGE FUNCTIONALITY --- 
+//-------------------------------------
+
+// Selects the 'start-button' element and adds an event listener for the click of this button, which will run the
+// startQuiz function
+document.getElementById('start-button').addEventListener('click', startQuiz);
+
+// Function that hides the landing-page AND takes user to the first question in the quizQuestion array
+function startQuiz() {
+    // Hide the landing page
+    const landingPage = document.getElementById('landing-page');
+    landingPage.style.display = 'none';
+
+    //Runs the displayQuestion function and begins user at the first question in the quizQuestion array
+    displayQuestion(currentQuestionIndex);
+}
+
+// Creates a function that displays the landing page by default and hides all other div's by default
+function hideAllExceptLandingPage() {
+    const allDivs = document.querySelectorAll('#landing-page, #quiz-container, #time-up-container, #well-done-container, #high-scores-container');
+    
+    allDivs.forEach((div) => {
+        if (div.id !== 'landing-page') {
+          div.style.display = 'none';
+        } else {
+          div.style.display = 'block';
+        }
+      });
+    }
+
+// Runs the actual hideAllExceptLandingPage function
+document.addEventListener('DOMContentLoaded', function () {
+    hideAllExceptLandingPage();
+  });
+
+// --- QUIZ CONTAINER FUNCTIONALITY --- 
+//-------------------------------------
+
 // Initializes the quiz with the first question in the quizQuestion
 let currentQuestionIndex = 0;
 
@@ -71,6 +112,9 @@ function displayQuestion(index) {
     }
 }
 
+//-------------------------------------
+
+
 //Function displays the Well Done page (PLACEHOLDER)
 function showWellDonePage();
 
@@ -80,35 +124,3 @@ function showTimeUpPage();
 //Function displays the High Score page (PLACEHOLDER)
 function showHighScorePage();
 
-// Selects the 'start-button' element and adds an event listener for the click of this button, which will run the
-// startQuiz function
-document.getElementById('start-button').addEventListener('click', startQuiz);
-
-// Function that hides the landing-page AND takes user to the first question in the quizQuestion array
-function startQuiz() {
-    // Hide the landing page
-    const landingPage = document.getElementById('landing-page');
-    landingPage.style.display = 'none';
-
-    //Runs the displayQuestion function and begins user at the first question in the quizQuestion array
-    displayQuestion(currentQuestionIndex);
-}
-
-
-// Creates a function that displays the landing page by default and hides all other div's by default
-function hideAllExceptLandingPage() {
-    const allDivs = document.querySelectorAll('#landing-page, #quiz-container, #time-up-container, #well-done-container, #high-scores-container');
-    
-    allDivs.forEach((div) => {
-        if (div.id !== 'landing-page') {
-          div.style.display = 'none';
-        } else {
-          div.style.display = 'block';
-        }
-      });
-    }
-
-// Runs the actual hideAllExceptLandingPage function
-document.addEventListener('DOMContentLoaded', function () {
-    hideAllExceptLandingPage();
-  });
