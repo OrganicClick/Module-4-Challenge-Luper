@@ -59,6 +59,10 @@ function startQuiz() {
     const landingPage = document.getElementById('landing-page');
     landingPage.style.display = 'none';
 
+    // This section should allow the quizContainer element to be displayed after user clicks the START button
+    const quizContainer = document.getElementById('quiz-container');
+    quizContainer.style.display = 'block';
+
     //Runs the displayQuestion function and begins user at the first question in the quizQuestion array
     displayQuestion(currentQuestionIndex);
 }
@@ -98,6 +102,13 @@ function displayQuestion(index) {
 
   // This will clear the previous content displayed for the quizContainer
   quizContainer.innerHTML = '';
+
+  // This creates an HTML element with an h2 style, which will be filled with the text content of the current question
+  const questionElement = document.createElement('h2');
+  questionElement.textContent = question.question;
+  
+  // This appends the question text to the quizContainer
+  quizContainer.appendChild(questionElement);
 
   // Iterate through options and create buttons
   question.options.forEach((option, optionIndex) => {
