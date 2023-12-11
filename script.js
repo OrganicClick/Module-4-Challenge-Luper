@@ -93,7 +93,6 @@ function startQuiz() {
     //Runs the displayQuestion function and begins user at the first question in the quizQuestion array
     displayQuestion(currentQuestionIndex);
 }
-}
 
 
 // Creates a function that displays the landing page by default and hides all other div's by default
