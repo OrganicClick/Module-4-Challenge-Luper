@@ -55,3 +55,8 @@ function hideAllExceptLandingPage() {
         }
       });
     }
+
+// Runs the actual hideAllExceptLandingPage function
+document.addEventListener('DOMContentLoaded', function () {
+    hideAllExceptLandingPage();
+  });
