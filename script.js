@@ -97,8 +97,11 @@ function displayQuestion(index) {
   const question = quizQuestions[index];
   console.log(`Question ${index + 1}: ${question.question}`);
 
-  // Selects the quizContainer element in the HTML file
+  // Creates const variable quizContainer which selects the quizContainer element in the HTML file
   const quizContainer = document.getElementById('quiz-container');
+
+  // Creates const variable wellDoneContainer which selects the wellDoneContainer element in the HTML file
+  const wellDoneContainer = document.getElementById('well-done-container');
 
   // This will clear the previous content displayed for the quizContainer
   quizContainer.innerHTML = '';
@@ -121,9 +124,9 @@ function displayQuestion(index) {
         // Display the next question
         displayQuestion(currentQuestionIndex);
       } else {
-        // After user answers all questions in the quizQuestions array, the below function runs
-        // which hides the "Quiz Container and displays the "Well Done" page
-        showWellDonePage();
+        // After user answers all questions in the quizQuestions array, hide quizContainer and show wellDoneContainer
+        quizContainer.style.display = 'none';
+        wellDoneContainer.style.display = 'block';
       }
     });
     // This will append created buttons to the quizContainer element
