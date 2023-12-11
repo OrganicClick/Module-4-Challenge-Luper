@@ -43,10 +43,33 @@ const quizQuestions = [
 
 ]
 
-// Iterates over each question within the quizQuestions array
-quizQuestions.forEach((question, index) => {
+// Initializes the quiz with the first question in the quizQuestion
+let currentQuestionIndex = 0;
 
+// Function is intended to display question, one at a time, based on the index value in quizQuestion, including
+// the options listed as buttons, and moves the user on to the next question when the user clicks on an option
+function displayQuestion(index) {
+  const question = quizQuestions[index];
+  console.log(`Question ${index + 1}: ${question.question}`);
+
+  // Iterate through options and create buttons
+  question.options.forEach(option, optionIndex) => {
+    const button = document.createElement('button');
+    button.textContent = option;
+    button.addEventListener('click', () => {
+      // Handle button click, move to the next question
+      currentQuestionIndex++;
+      if (currentQuestionIndex < quizQuestions.length) {
+        // Display the next question
+        displayQuestion(currentQuestionIndex);
+      } else {
+        // Handle quiz completion or navigate to another page
+      }
+    });
+    }
 }
+
+
 
 
 // Creates a function that displays the landing page by default and hides all other div's by default
