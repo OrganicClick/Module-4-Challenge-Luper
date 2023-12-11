@@ -53,7 +53,7 @@ function displayQuestion(index) {
   console.log(`Question ${index + 1}: ${question.question}`);
 
   // Iterate through options and create buttons
-  question.options.forEach(option, optionIndex) => {
+  question.options.forEach(option, optionIndex) ; {
     const button = document.createElement('button');
     button.textContent = option;
     button.addEventListener('click', () => {
