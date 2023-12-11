@@ -43,6 +43,12 @@ const quizQuestions = [
 
 ]
 
+// Iterates over each question within the quizQuestions array
+quizQuestions.forEach((question, index) => {
+
+}
+
+
 // Creates a function that displays the landing page by default and hides all other div's by default
 function hideAllExceptLandingPage() {
     const allDivs = document.querySelectorAll('#landing-page, #quiz-container, #time-up-container, #well-done-container, #high-scores-container');
