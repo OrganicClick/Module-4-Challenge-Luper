@@ -80,6 +80,21 @@ function showTimeUpPage();
 //Function displays the High Score page (PLACEHOLDER)
 function showHighScorePage();
 
+// Selects the 'start-button' element and adds an event listener for the click of this button, which will run the
+// startQuiz function
+document.getElementById('start-button').addEventListener('click', startQuiz);
+
+// Function that hides the landing-page AND takes user to the first question in the quizQuestion array
+function startQuiz() {
+    // Hide the landing page
+    const landingPage = document.getElementById('landing-page');
+    landingPage.style.display = 'none';
+
+    //Runs the displayQuestion function and begins user at the first question in the quizQuestion array
+    displayQuestion(currentQuestionIndex);
+}
+}
+
 
 // Creates a function that displays the landing page by default and hides all other div's by default
 function hideAllExceptLandingPage() {
