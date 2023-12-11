@@ -93,6 +93,12 @@ function displayQuestion(index) {
   const question = quizQuestions[index];
   console.log(`Question ${index + 1}: ${question.question}`);
 
+  // Selects the quizContainer element in the HTML file
+  const quizContainer = document.getElementById('quiz-container');
+
+  // This will clear the previous content displayed for the quizContainer
+  quizContainer.innerHTML = '';
+
   // Iterate through options and create buttons
   question.options.forEach((option, optionIndex) => {
     const button = document.createElement('button');
@@ -109,6 +115,8 @@ function displayQuestion(index) {
         showWellDonePage();
       }
     });
+    // This will append created buttons to the quizContainer element
+    quizContainer.appendChild(button);
    });
 }
 
