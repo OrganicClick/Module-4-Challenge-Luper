@@ -63,12 +63,16 @@ function displayQuestion(index) {
         // Display the next question
         displayQuestion(currentQuestionIndex);
       } else {
-        // Handle quiz completion or navigate to another page
+        // After user answers all questions in the quizQuestions array, the below function runs
+        // which hides the "Quiz Container and displays the "Well Done" page
+        showWellDonePage();
       }
     });
     }
 }
 
+//Function displays the Well Done page (PLACEHOLDER)
+function showWellDonePage();
 
 
 
