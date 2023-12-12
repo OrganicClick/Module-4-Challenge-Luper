@@ -199,6 +199,12 @@ function displayQuestion(index) {
         quizContainer.style.display = 'none';
         wellDoneContainer.style.display = 'block';
         stopCountdown();
+
+        // Get the user's score (current value of the countdown timer)
+        const userScore = countdownTime;
+
+        // Update the userScore in the HTML document
+        document.getElementById('userScore').textContent = userScore;
       }
     });
     // This will append created buttons to the quizContainer element
@@ -224,9 +230,6 @@ function displayQuestion(index) {
 // Logic within also resets the quiz state and resets the countdown timer and hides all other divs.
 document.getElementById('submit-well-done').addEventListener('click', function() {
 
-  // Get the user's score (current value of the countdown timer)
-  const userScore = countdownTime;
-
   //  Hides the well-done container
   const wellDoneContainer = document.getElementById('well-done-container');
   wellDoneContainer.style.display = 'none';
@@ -244,9 +247,6 @@ document.getElementById('submit-well-done').addEventListener('click', function()
 
    // Hide all other divs
    hideAllExceptLandingPage();
-
-   // Update the userScore in the HTML document
-   document.getElementById('userScore').textContent = userScore;
 
 });
 
