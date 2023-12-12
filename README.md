@@ -3,6 +3,8 @@ The following repository will be reserved for the Coding Quiz project associated
 
 Example images to reference for project, as well as User Story and Acceptance Criteria, were provided by GWU Coding Bootcamp:
 
+https://bootcampspot.instructure.com/courses/4644/assignments/65725?module_item_id=1127490
+
 ERRORS NOTICED THAT I CAN't FIX (YET): 
 If you run through the quiz a second time, you'll notice that you won't be presented with the well-done page. 
 
@@ -10,7 +12,9 @@ The time-up-container in the JS is not finished and likely needs touch up in HTM
 
 Ran out of time to include localStorage and submission of user score and initials to high-score-container.
 
-https://bootcampspot.instructure.com/courses/4644/assignments/65725?module_item_id=1127490
+SCREENSHOT OF PROJECT:
+![Screenshot of Landing Page for Module-4-Challenge-Luper](<Screenshot 2023-12-11 at 11.50.02 PM.png>)
+
 
 User Story
 AS A coding boot camp student
