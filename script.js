@@ -80,6 +80,18 @@ function startCountdown() {
 }, 1000);
 }
 
+// This creates a separate function that stops the countdown timer
+function stopCountdown() {
+  clearInterval(countdownInterval);
+}
+
+// This creates a separate function that resets the countdown timer to the original state of 90 seconds
+function resetCountdown() {
+  clearInterval(countdownInterval);
+  countdownTime = 90;
+  timerValueElement.textContent = countdownTime;
+}
+
 // --- LANDING PAGE FUNCTIONALITY --- 
 //-------------------------------------
 
