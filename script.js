@@ -68,6 +68,10 @@ document.getElementById('start-button').addEventListener('click', startQuiz);
 
 // Function that hides the landing-page AND takes user to the first question in the quizQuestion array
 function startQuiz() {
+
+    //Reset the countdown timer-value to 90 seconds when user clicks the START button
+    countdownTime = 90;
+
     // Hide the landing page
     const landingPage = document.getElementById('landing-page');
     landingPage.style.display = 'none';
