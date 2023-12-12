@@ -6,6 +6,7 @@ Example images to reference for project, as well as User Story and Acceptance Cr
 ERRORS NOTICED THAT I CAN't FIX (YET): 
 If you run through the quiz a second time, you'll notice that you won't be presented with the well-done page. 
 
+The time-up-container in the JS is not finished and likely needs touch up in HTML.
 
 
 https://bootcampspot.instructure.com/courses/4644/assignments/65725?module_item_id=1127490

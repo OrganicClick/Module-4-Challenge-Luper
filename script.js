@@ -247,6 +247,13 @@ document.getElementById('submit-well-done').addEventListener('click', function()
 // -- HIGH SCORE CONTAINER FUNCTIONALITY ---
 //-------------------------------------
 
+// Selects the 'go-back-button' element and adds an event listener for the click of this button, which will run
+// function to hide all divs except landing page
+document.getElementById('go-back-button').addEventListener('click', function() {
+  // Reuses function to hide all divs except the landing page
+  hideAllExceptLandingPage();
+});
+
 // Selects the 'high-score-button' element and adds an event listener for the click of this button
 document.getElementById('high-score-button').addEventListener('click', showHighScorePage);
 
