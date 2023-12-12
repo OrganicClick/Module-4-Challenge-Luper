@@ -177,9 +177,11 @@ function displayQuestion(index) {
         // Display the next question
         displayQuestion(currentQuestionIndex);
       } else {
-        // After user answers all questions in the quizQuestions array, hide quizContainer and show wellDoneContainer
+        // After user answers all questions in the quizQuestions array, hide quizContainer, show wellDoneContainer, and runs function to stop
+        // the countdown timer
         quizContainer.style.display = 'none';
         wellDoneContainer.style.display = 'block';
+        stopCountdown();
       }
     });
     // This will append created buttons to the quizContainer element
