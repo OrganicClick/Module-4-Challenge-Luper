@@ -244,6 +244,10 @@ document.getElementById('submit-well-done').addEventListener('click', function()
 
    // Hide all other divs
    hideAllExceptLandingPage();
+
+   // Update the userScore in the HTML document
+   document.getElementById('userScore').textContent = userScore;
+
 });
 
 
