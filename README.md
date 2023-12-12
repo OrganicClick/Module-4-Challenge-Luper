@@ -3,6 +3,11 @@ The following repository will be reserved for the Coding Quiz project associated
 
 Example images to reference for project, as well as User Story and Acceptance Criteria, were provided by GWU Coding Bootcamp:
 
+ERRORS NOTICED THAT I CAN't FIX (YET): 
+If you run through the quiz a second time, you'll notice that you won't be presented with the well-done page. 
+
+
+
 https://bootcampspot.instructure.com/courses/4644/assignments/65725?module_item_id=1127490
 
 User Story
