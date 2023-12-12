@@ -137,3 +137,6 @@ Decrease timer if answer is wrong example referenced:
 
 Referenced for weird behavior with double-increment in JS when spam clicking:
 	https://stackoverflow.com/questions/31310105/weird-javascript-incrementing-behavior
+
+Storing high scores using localStorage:
+	https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
