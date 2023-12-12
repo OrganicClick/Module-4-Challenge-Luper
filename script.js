@@ -244,5 +244,33 @@ document.getElementById('submit-well-done').addEventListener('click', function()
 });
 
 
-//Function displays the High Score page (PLACEHOLDER)
-//function showHighScorePage();
+// -- HIGH SCORE CONTAINER FUNCTIONALITY ---
+//-------------------------------------
+
+// Selects the 'high-score-button' element and adds an event listener for the click of this button
+document.getElementById('high-score-button').addEventListener('click', showHighScorePage);
+
+// Function that displays the High Score page
+function showHighScorePage() {
+  // Hide all other divs
+  hideAllExceptHighScore();
+
+  // Display the high-score-container
+  const highScoreContainer = document.getElementById('high-score-container');
+  highScoreContainer.style.display = 'block';
+
+  // Logic to load and display high scores goes here (if applicable)
+}
+
+// Function to hide all other divs except high-score-container
+function hideAllExceptHighScore() {
+  const allDivs = document.querySelectorAll('#landing-page, #quiz-container, #time-up-container, #well-done-container, #high-scores-container');
+  
+  allDivs.forEach((div) => {
+    if (div.id !== 'high-scores-container') {
+      div.style.display = 'none';
+    } else {
+      div.style.display = 'block';
+    }
+  });
+}
