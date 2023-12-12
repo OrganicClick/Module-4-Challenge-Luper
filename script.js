@@ -46,6 +46,19 @@ const quizQuestions = [
 
 ]
 
+// --- TIMER FUNCTIONALITY --- 
+//-------------------------------------
+
+// Creates a timerValueElement variable, which targets the HTML element 'timer-value'
+const timerValueElement = document.getElementById('timer-value');
+
+// Sets the variable to store the countdown interval
+let countdownInterval;
+
+// Sets the variable to store the countdown time in seconds
+let countdownTime = 90;
+
+
 // --- LANDING PAGE FUNCTIONALITY --- 
 //-------------------------------------
 
