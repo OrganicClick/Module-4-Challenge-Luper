@@ -92,7 +92,14 @@ function resetCountdown() {
   timerValueElement.textContent = countdownTime;
 }
 
+// This creates a separate function that allows countdown timer to decrease by a specified number of seconds
+function decreaseCountdown(seconds) {
+  countdownTimer -= seconds;
 
+  // Ensure the timer does not go below zero
+  if (countdownTimer < 0) {
+    countdownTimer = 0;
+  }
 
 // --- LANDING PAGE FUNCTIONALITY --- 
 //-------------------------------------
