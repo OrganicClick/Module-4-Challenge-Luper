@@ -58,6 +58,27 @@ let countdownInterval;
 // Sets the variable to store the countdown time in seconds
 let countdownTime = 90;
 
+// This creates a function to start the countdown timer
+function startCountdown() {
+  countdownInterval = setInterval(function () {
+    // This updates the HTML timer-value with the countdownTime
+    timerValueElement.textContent = countdownTime;
+    
+    // If statement that checks if the countdown has reached zero
+    if (countdownTime <= 0) {
+      // This stops the countdown
+      clearInterval(countdownInterval);
+
+      // If the countdown timer reaches 0, the countdown timer is stopped and function that displays the time-up-container 
+      // and hides the quiz-container.
+      showTimeUpContainer();
+    } else {
+      
+      // Function counts down from 90 seconds unless previous if statement is met
+      countdownTime--;
+    }
+}, 1000);
+}
 
 // --- LANDING PAGE FUNCTIONALITY --- 
 //-------------------------------------
@@ -79,6 +100,9 @@ function startQuiz() {
     // This section should allow the quizContainer element to be displayed after user clicks the START button
     const quizContainer = document.getElementById('quiz-container');
     quizContainer.style.display = 'block';
+
+    // Starts the countdown timer when the parent function runs
+    startCountdown();
 
     //Runs the displayQuestion function and begins user at the first question in the quizQuestion array
     displayQuestion(currentQuestionIndex);
