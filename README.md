@@ -8,6 +8,7 @@ If you run through the quiz a second time, you'll notice that you won't be prese
 
 The time-up-container in the JS is not finished and likely needs touch up in HTML.
 
+Ran out of time to include localStorage and submission of user score and initials to high-score-container.
 
 https://bootcampspot.instructure.com/courses/4644/assignments/65725?module_item_id=1127490
 
