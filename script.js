@@ -100,7 +100,7 @@ function decreaseCountdown(seconds) {
   if (countdownTimer < 0) {
     countdownTimer = 0;
   }
-
+}
 // --- LANDING PAGE FUNCTIONALITY --- 
 //-------------------------------------
 
@@ -215,7 +215,7 @@ function displayQuestion(index) {
 //function showTimeUpPage();
 
 
-
+// --- WELL DONE CONTAINER FUNCTIONALITY --- 
 //-------------------------------------
 
 //Function displays the Well Done page (PLACEHOLDER)
@@ -225,4 +225,3 @@ function displayQuestion(index) {
 
 //Function displays the High Score page (PLACEHOLDER)
 //function showHighScorePage();
-
