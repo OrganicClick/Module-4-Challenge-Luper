@@ -94,11 +94,11 @@ function resetCountdown() {
 
 // This creates a separate function that allows countdown timer to decrease by a specified number of seconds
 function decreaseCountdown(seconds) {
-  countdownTimer -= seconds;
+  countdownTime -= seconds;
 
   // Ensure the timer does not go below zero
-  if (countdownTimer < 0) {
-    countdownTimer = 0;
+  if (countdownTime < 0) {
+    countdownTime = 0;
   }
 }
 // --- LANDING PAGE FUNCTIONALITY --- 
