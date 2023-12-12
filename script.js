@@ -224,6 +224,9 @@ function displayQuestion(index) {
 // Logic within also resets the quiz state and resets the countdown timer and hides all other divs.
 document.getElementById('submit-well-done').addEventListener('click', function() {
 
+  // Get the user's score (current value of the countdown timer)
+  const userScore = countdownTime;
+
   //  Hides the well-done container
   const wellDoneContainer = document.getElementById('well-done-container');
   wellDoneContainer.style.display = 'none';
