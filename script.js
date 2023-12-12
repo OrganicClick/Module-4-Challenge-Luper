@@ -218,9 +218,28 @@ function displayQuestion(index) {
 // --- WELL DONE CONTAINER FUNCTIONALITY --- 
 //-------------------------------------
 
-//Function displays the Well Done page (PLACEHOLDER)
-//function showWellDonePage();
+// Selects the 'submit-well-done' element and adds an event listener for the click of this button, which will take the user back to the landing page.
+// Logic within also resets the quiz state and resets the countdown timer and hides all other divs.
+document.getElementById('submit-well-done').addEventListener('click', function() {
 
+  //  Hides the well-done container
+  const wellDoneContainer = document.getElementById('well-done-container');
+  wellDoneContainer.style.display = 'none';
+
+  // Clear the content of the well-done container
+  wellDoneContainer.innerHTML = '';
+
+   // Display the landing page div
+   const landingPage = document.getElementById('landing-page');
+   landingPage.style.display = 'block';
+
+   // This resets the quiz state to the intial question in the array and resets the countdown timer
+   currentQuestionIndex = 0;
+   resetCountdown(); 
+
+   // Hide all other divs
+   hideAllExceptLandingPage();
+});
 
 
 //Function displays the High Score page (PLACEHOLDER)
