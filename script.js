@@ -92,6 +92,8 @@ function resetCountdown() {
   timerValueElement.textContent = countdownTime;
 }
 
+
+
 // --- LANDING PAGE FUNCTIONALITY --- 
 //-------------------------------------
 
@@ -171,6 +173,14 @@ function displayQuestion(index) {
     const button = document.createElement('button');
     button.textContent = option;
     button.addEventListener('click', () => {
+      // Decrease the countdown timer by 10 seconds if the correct answer is not selected by user
+      if (option !== question.correctAnswer) {
+        decreaseCountdown(10);
+      }
+
+      // Moves user to the next question in the array
+      currentQuestionIndex++;
+
       // Handle button click, move to the next question
       currentQuestionIndex++;
       if (currentQuestionIndex < quizQuestions.length) {
